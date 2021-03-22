@@ -2,8 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
   font-family: calibri;
 }
 
 :root {
+  --btn-bg-color: khaki;
+  --dark-text-color: #444;
 }
+
+
+.header {
+  display: flex;
+  flex-flow: column;
+
+}
+
+  .name-of-website {
+    color: var(--dark-text-color);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contacts {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+  }
+
+    .contacts li {
+      margin: 5px;
+      background: var(--btn-bg-color);
+    }
+
+      .contacts li a {
+        display: inline-block;
+        padding: 5px 20px 5px 20px;
+        text-decoration: none;
+      }
