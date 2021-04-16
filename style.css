@@ -48,14 +48,19 @@
   margin-top: 10px;
 }
 
-  .desc-picture {
+  header.desc-picture {
     text-align: center;
   }
 
-  .desc-contents {
+  ul.desc-contents {
     margin-top: 5px;
     text-align: center;
   }
+
+    .desc {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
     .desc-about {
       font-size: 35px;
@@ -77,3 +82,72 @@
         color: crimson;
         font-style: normal;
       }
+
+
+  section.projects {
+    margin-top: 20px;
+  }
+
+    .projects h2 {
+      font-size: 30px;
+      padding: 5px;
+      text-align: center;
+      text-decoration: underline;
+      color: var(--dark-text-color);
+    }
+
+    .project-container {
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+      .project {
+        width: 75%;
+        margin: 5px 0px 5px 0px;
+
+        display:flex;
+        flex-flow: column;
+      }
+
+        .project .top {
+          height: 260px;
+          flex-grow: 3;
+          background: #ddd;
+          border: 5px solid grey;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+          .top .project-name {
+            font-size: 35px;
+          }
+
+        .project .bottom {
+          height: 40px;
+          flex-grow: 1px;
+        }
+
+          .bottom ul {
+            list-style-type: none;
+
+            display: flex;
+          }
+
+            .github, .view-website {
+              margin: 5px;
+              background: var(--btn-bg-color);
+              text-align: center;
+            }
+
+            .github a, .view-website a {
+              text-decoration: none;
+
+              display: inline-block;
+              padding: 5px 10px 5px 10px;
+              text-decoration: none;
+            }
